@@ -13,3 +13,15 @@ Change each statement that records the time to use time.perf_counter instead of 
 
 Run the program again. What do you notice? Write it as a comment.
 """
+import time
+import math
+
+x = time.perf_counter()
+math.pow(2,2)
+print(x)
+
+2 ** 2
+print(x)
+
+# The time is the same after running both statements.
+# with perf_counter the time output is in fractional seconds
